@@ -1,0 +1,263 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "title": "AGD Theme",
+    "settings": {
+        "useRootPaddingAwareAlignments": true,
+        "appearanceTools": true,
+        "layout": {
+            "contentSize": "1248px",
+            "wideSize": "1440px"
+        },
+        "color": {
+            "palette": [
+                {
+                    "name": "Blue Medium",
+                    "slug": "blue-medium",
+                    "color": "#3B69B3"
+                },
+                {
+                    "name": "Blue Strong",
+                    "slug": "blue-strong",
+                    "color": "#031E4A"
+                },
+                {
+                    "name": "Orange Medium",
+                    "slug": "orange-medium",
+                    "color": "#F89C27"
+                },
+                {
+                    "name": "Orange light",
+                    "slug": "orange-light",
+                    "color": "#F9B052"
+                },
+                {
+                    "name": "Gray 100",
+                    "slug": "gray-100",
+                    "color": "#DEDEDF"
+                },
+                {
+                    "name": "Gray 700",
+                    "slug": "gray-700",
+                    "color": "#2D2E30"
+                },
+                {
+                    "name": "Gray 900",
+                    "slug": "gray-900",
+                    "color": "#09090A"
+                }
+            ]
+        },
+        "typography": {
+            "dropCap": false,
+            "fluid": true,
+            "fontFamilies": [
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Space Grotesk",
+                            "fontStretch": "normal",
+                            "fontWeight": "500",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/Space Grotesk/SpaceGrotesk-Medium.ttf"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "\"Space Grotesk\", sans-serif",
+                    "name": "Space Grotesk",
+                    "slug": "headings"
+                },
+                {
+                    "fontFace": [
+                        {
+                            "fontFamily": "Nunito",
+                            "fontStretch": "normal",
+                            "fontWeight": "400",
+                            "fontStyle": "normal",
+                            "src": [
+                                "file:./assets/fonts/Nunito/Nunito-Regular.ttf"
+                            ]
+                        }
+                    ],
+                    "fontFamily": "\"Nunito\", sans-serif",
+                    "name": "Nunito",
+                    "slug": "body"
+                }
+            ],
+            "fontSizes": [
+                {
+                    "fluid": {
+                        "max": "0.875rem",
+                        "min": "0.75rem"
+                    },
+                    "name": "Small",
+                    "slug": "Small",
+                    "size": "0.875rem"
+                },
+                {
+                    "fluid": {
+                        "max": "1rem",
+                        "min": "0.875rem"
+                    },
+                    "name": "Medium",
+                    "slug": "medium",
+                    "size": "1rem"
+                },
+                {
+                    "fluid": {
+                        "max": "1.5rem",
+                        "min": "1.25rem"
+                    },
+                    "name": "Large",
+                    "slug": "large",
+                    "size": "1.5rem"
+                },
+                {
+                    "fluid": {
+                        "max": "1.75rem",
+                        "min": "1.5rem"
+                    },
+                    "name": "X Large",
+                    "slug": "x-large",
+                    "size": "1.75rem"
+                },
+                {
+                    "fluid": {
+                        "max": "2.5rem",
+                        "min": "2.25rem"
+                    },
+                    "name": "XX Large",
+                    "slug": "xx-large",
+                    "size": "2.5rem"
+                }
+            ]
+        }
+    },
+    "styles": {
+        "spacing": {
+            "padding": {
+                "top": "0",
+                "right": "1rem",
+                "bottom": "0",
+                "left": "1rem"
+            }
+        },
+        "typography": {
+            "fontFamily": "var(--wp--preset--font-family--body)",
+            "lineHeight": "1.75",
+            "fontSize": "16px"
+        },
+        "elements": {
+            "heading": {
+                "typography": {
+                    "fontFamily": "var(--wp--preset--font-family--headings)"
+                }
+            },
+            "h1": {
+                "typography": {
+                    "fontSize": "clamp(2.25rem, 2.1785714285714284rem + 0.35714285714285715vw, 2.5rem)",
+                    "lineHeight": "1.25"
+                }
+            },
+            "h2": {
+                "typography": {
+                    "fontSize": "clamp(1.5rem, 1.4285714285714286rem + 0.35714285714285715vw, 1.75rem)",
+                    "lineHeight": "1.25"
+                }
+            },
+            "h3": {
+                "typography": {
+                    "fontSize": "clamp(1.25rem, 1.1785714285714286rem + 0.35714285714285715vw, 1.5rem)",
+                    "lineHeight": "1.25"
+                }
+            },
+            "h4": {
+                "typography": {
+                    "fontSize": "clamp(1.15rem, 1.1214285714285712rem + 0.142857142857143vw, 1.25rem)",
+                    "lineHeight": "1.25"
+                }
+            },
+            "h5": {
+                "typography": {
+                    "fontSize": "clamp(1rem, 0.9714285714285714rem + 0.142857142857143vw, 1.1rem)",
+                    "lineHeight": "1.25"
+                }
+            },
+            "h6": {
+                "typography": {
+                    "fontSize": "clamp(0.875rem, 0.8392857142857143rem + 0.17857142857142858vw, 1rem)",
+                    "lineHeight": "1.25"
+                }
+            },
+            "link": {
+                "color": {
+                    "text": "var(--wp--preset--color--blue-medium)"
+                },
+                ":hover": {
+                    "color": {
+                        "text": "var(--wp--preset--color--orange-medium)"
+                    },
+                    "typography": {
+                        "textDecoration": "none"
+                    }
+                },
+                ":focus": {
+                    "color": {
+                        "text": "var(--wp--preset--color--orange-medium)"
+                    },
+                    "typography": {
+                        "textDecoration": "none"
+                    }
+                },
+                ":active": {
+                    "color": {
+                        "text": "var(--wp--preset--color--blue-medium)"
+                    },
+                    "typography": {
+                        "textDecoration": "none"
+                    }
+                },
+                "typography": {
+                    "textDecoration": "underline"
+                }
+            },
+            "button": {
+                "spacing": {
+                    "padding": {
+                        "top": "1rem",
+                        "right": "2rem",
+                        "bottom": "1rem",
+                        "left": "2rem"
+                    }                    
+                },
+                "typography": {
+                    "fontSize": "var(--wp--preset--font-size--medium)",
+                    "fontWeight": "500"
+                },
+                "color": {
+                    "background": "var(--wp--preset--color--orange-medium)",
+                    "text": "var(--wp--preset--color--blue-strong)"
+                },
+                ":hover": {
+                    "color": {
+                        "background": "var(--wp--preset--color--orange-light)"
+                    }
+                },
+                ":focus": {
+                    "color": {
+                        "background": "var(--wp--preset--color--orange-light)"
+                    }
+                },
+                ":visited": {
+                    "color": {
+                        "background": "var(--wp--preset--color--orange-light)"
+                    }
+                },
+                "border": {
+                    "radius": "0.25rem"
+                }
+            }
+        }
+    }
+}
