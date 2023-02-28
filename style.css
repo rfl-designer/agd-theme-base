@@ -10,3 +10,492 @@ License URI: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
 Text Domain: agd-theme
 Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, accessibility-ready, blog, portfolio, news
 */
+
+/* Global Style -------------------------------- */
+/*
+.wp-site-blocks > * + * {
+    overflow-x: auto;
+}
+*/
+/* Header Styles ------------------------------- */ 
+
+html {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.header {
+    z-index: 999;
+    position: relative;
+}
+
+.main-content-post {
+    z-index: 1;
+}
+
+.main-content {
+    position: relative;
+}
+
+a.wp-element-button:hover {
+    filter: brightness(1.15);
+}
+
+.section-header {
+    filter: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+}
+
+.container-header {
+    padding-left: 1rem;
+    padding-right: 1rem; 
+}
+
+@media only screen and (max-width:768px) {
+    .container-header__logo {
+        width: 8rem;
+        order: 2;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open {
+        height: 282px !important;
+        padding-left: 0;
+        padding-right: 0;
+        background-color: white !important;
+        z-index: 999;
+    }
+
+    ul.wp-block-navigation__container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation__container {
+        gap: 0;
+    }
+
+    .wp-block-navigation__responsive-container-close {
+        top: 16px;
+        right: 16px;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item {
+        padding-left: 1rem;
+        width: 100%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item:hover {
+        background-color: var(--wp--preset--color--orange-medium) !important;
+        color: var(--wp--preset--color--blue-strong) !important;
+    }
+
+    .wp-block-navigation__responsive-container.is-menu-open .wp-block-navigation__responsive-container-content .wp-block-navigation-item:hover a {
+        color: var(--wp--preset--color--blue-strong) !important;
+    }
+
+    .container-header__nav_primary {
+        order: 1;
+    }
+
+    .container-header__button {
+        order: 3;
+    }
+
+    .container-header__button div a {
+        padding: 0.5rem 1rem 0.5rem 1rem ;
+    }
+}
+
+.is-style-default .wp-block-navigation-item:hover a {
+    font-weight: 500;
+    color: var(--wp--preset--color--orange-medium) !important;
+}
+
+.is-style-secondary .wp-block-navigation-item a {
+    font-weight: 400;
+    color: var(--wp--preset--color--white) !important;
+}
+
+.is-style-secondary .wp-block-navigation-item:hover a {
+    font-weight: 500;
+    color: var(--wp--preset--color--orange-medium) !important;
+}
+
+/* Section Hero -------------------------------- */
+
+.section-hero__columns {
+    height: 618px;
+}
+
+.section-hero__columns__right {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section-hero__columns__right__graphic {
+    position: absolute;
+    z-index: 2;
+    top: 168px;
+    right: -36px;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.section-hero__columns__right__cart {
+    position: absolute;
+    z-index: 2;
+    bottom: 170px;
+    left: 0px;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+.section-hero__columns__right__person {
+    position: absolute;
+    z-index: 2;
+    top: 90px;
+    left: 36px;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+}
+
+@media only screen and (max-width: 960px) {
+    .section-hero__columns__right__graphic {
+        position: absolute;
+        width: 128px;
+        top: 96px;
+        right: -16px;
+    }
+    
+    .section-hero__columns__right__cart {
+        position: absolute;
+        width: 128px;
+        bottom: 112px;
+        left: 0px;
+    }
+    
+    .section-hero__columns__right__person {
+        position: absolute;
+        width: 128px;
+        top: 72px;
+        left: 36px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section-hero__columns {
+        height: auto;
+    }
+
+    .section-hero__columns__right__graphic {
+        position: absolute;
+        width: 112px;
+        top: 96px;
+        right: -8px;
+    }
+    
+    .section-hero__columns__right__cart {
+        position: absolute;
+        width: 112px;
+        bottom: 128px;
+        left: 0px;
+    }
+    
+    .section-hero__columns__right__person {
+        position: absolute;
+        width: 112px;
+        top: 90px;
+        left: 36px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .section-hero__columns {
+        height: auto;
+    }
+
+    .section-hero__columns__right__graphic {
+        position: absolute;
+        width: 96px;
+        top: 72px;
+        right: -8px;
+    }
+    
+    .section-hero__columns__right__cart {
+        position: absolute;
+        width: 96px;
+        bottom: 64px;
+        left: 0px;
+    }
+    
+    .section-hero__columns__right__person {
+        position: absolute;
+        width: 96px;
+        top: 48px;
+        left: 24px;
+    }
+}
+
+/* Section Segments -----------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .section-segments__btn__top {
+        display: none !important;
+    }
+
+    .section-segments__imgs {
+        margin-top: 1.5rem !important;
+    }
+}
+
+/* Section Segments -----------------------------*/
+
+.section-about__column_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .section-about__column_right{
+        padding-top: 2rem;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .section-cta__btn{
+        justify-content: flex-start !important;
+        padding-top: 1rem;
+    }
+}
+
+
+/* Section Services -----------------------------*/
+
+.wp-block-group.section-services__line {
+    align-items: start;
+}
+
+.section-services__heading {
+    max-width: 980px;
+}
+
+
+.section-services__columns {
+    width: calc(100% / 3 - 2rem);
+    overflow-y: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-services__columns {
+        width: calc(100% / 2 - 1rem);
+    }
+}
+
+.section-services__columns .rounded-lg {
+    border-radius: 0.5rem;
+}
+
+/* CTA social media ------------------------------*/
+
+.wp-social-links.is-style-logos-only >.wp-social-link {
+    opacity: 1 !important;
+}
+
+/* Section Testemunial ---------------------------*/
+
+.section-testemunial__column__left {
+    position: relative;
+}
+
+.section-testemunial__illustration {
+    z-index: 2;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+}
+
+.section-testemunial__header_items {
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-testemunial {
+        padding-top: 1rem !important;
+    }
+
+    .section-testemunial__illustration {
+        width: 168px;
+    }
+}
+
+
+/* Section Customers -----------------------------*/
+
+.section-customers {
+    margin-block-start: 48px;
+    margin-block-end: 64px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.section-customers__img {
+    filter: saturate(0);
+}
+
+.section-customers__img:hover {
+    filter: saturate(1);
+}
+
+/* Section CTA IMG -----------------------------*/
+
+.section-cta-img {
+    margin-block-start: 180px !important;
+}
+
+.section-cta-img__column__left {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.section-cta-img__column__right {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
+
+.section-cta-img__img {
+    position: absolute;
+    width: 384px;
+    left: 88px;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .section-cta-img {
+        margin-block-start: 100px !important;
+    }
+    
+
+    .section-cta-img__img {
+        width: 280px;
+        position: absolute;
+        left: 72px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .section-cta-img {
+        margin-block-start: 272px !important;
+    }
+
+    .section-cta-img__img {
+        width: 256px;
+        position: absolute;
+        left: 88px
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .section-cta-img__img {
+        width: 256px;
+        position: absolute;
+        left: 28px
+    }
+}
+
+/* Modal ---------------------------------------*/
+
+.modal-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    max-height: 100vh;
+    inset: 0;
+}
+
+.modal {
+    width: 100%;
+    max-width: 500px !important;
+    /* height: calc(100vh - 10%); */
+    overflow: hidden;
+}
+
+/* Form -----------------------------------------*/
+
+.wpcf7 input[type="text"] {
+    height: 3rem;
+    padding: 0 1rem;
+    font-size: 1.15rem;
+    border: 0;
+    border-radius: 0.25rem;
+    color: var(--wp--preset--color--blue-strong);
+    margin-top: 1rem;
+}
+
+.wpcf7 input[type="submit"] {
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: var(--wp--preset--color--orange-medium);
+    border: 0;
+    border-radius: 0.25rem;
+    color: var(--wp--preset--color--blue-strong);
+    margin-top: 1.25rem;
+}
+
+.wpcf7 input[type="submit"]:hover {
+    filter: brightness(1.1);
+}
+
+/* Section Social Media ------------------------*/
+
+@media only screen and (max-width: 768px) {
+    .section-social-media__group__icons {
+        justify-content: flex-start !important;
+        margin-top: 1rem !important;
+    }
+}
+
+/* Section Footer -------------------------------*/
+
+
+.section-footer__dev {
+    text-align: right;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .section-footer__dev {
+        padding-top: 1rem !important;
+        text-align: left !important;
+    }
+}
+
+.section-footer__copyright {
+    margin-top: 1.5rem !important;
+}
+
+/* X-cloak Alpinejs ------------------------------*/
+
+[x-cloak] { display: none !important; }
+
+/* Scroll Trigger -------------------------------*/
+
+.group-trigger {
+    overflow: hidden;
+}
+

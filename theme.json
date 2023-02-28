@@ -132,6 +132,45 @@
                     "size": "2.5rem"
                 }
             ]
+        },
+        "spacing": {
+            "spacingSizes": [
+                {   
+                "size": "0.25rem",
+                "slug": "20",
+                "name": "1"
+                },
+                {
+                "size": "0.5rem",
+                "slug": "30",
+                "name": "2"
+                },
+                {
+                "size": "1rem",
+                "slug": "40",
+                "name": "3"
+                },
+                {
+                "size": "2rem",
+                "slug": "50",
+                "name": "4"
+                },
+                {
+                "size": "4rem",
+                "slug": "60",
+                "name": "5"
+                },
+                {
+                "size": "8rem",
+                "slug": "70",
+                "name": "6"
+                },
+                {
+                "size": "16rem",
+                "slug": "80",
+                "name": "7"
+                }
+            ]
         }
     },
     "styles": {
@@ -141,17 +180,24 @@
                 "right": "1rem",
                 "bottom": "0",
                 "left": "1rem"
-            }
+            },
+            "blockGap": "0"
         },
         "typography": {
             "fontFamily": "var(--wp--preset--font-family--body)",
             "lineHeight": "1.75",
             "fontSize": "16px"
         },
+        "color": {
+            "text": "var(--wp--preset--color--blue-strong)"
+        },
         "elements": {
             "heading": {
                 "typography": {
                     "fontFamily": "var(--wp--preset--font-family--headings)"
+                },
+                "color": {
+                    "text": "var(--wp--preset--color--blue-strong)"
                 }
             },
             "h1": {
@@ -225,9 +271,9 @@
             "button": {
                 "spacing": {
                     "padding": {
-                        "top": "1rem",
+                        "top": "0.75rem",
                         "right": "2rem",
-                        "bottom": "1rem",
+                        "bottom": "0.75rem",
                         "left": "2rem"
                     }                    
                 },
@@ -239,23 +285,18 @@
                     "background": "var(--wp--preset--color--orange-medium)",
                     "text": "var(--wp--preset--color--blue-strong)"
                 },
-                ":hover": {
-                    "color": {
-                        "background": "var(--wp--preset--color--orange-light)"
-                    }
-                },
-                ":focus": {
-                    "color": {
-                        "background": "var(--wp--preset--color--orange-light)"
-                    }
-                },
-                ":visited": {
-                    "color": {
-                        "background": "var(--wp--preset--color--orange-light)"
-                    }
-                },
                 "border": {
                     "radius": "0.25rem"
+                }
+            }
+        },
+        "blocks": {
+            "core/navigation": {
+                "color": {
+                    "text": "var(--wp--preset--color--blue-strong"
+                },
+                "spacing": {
+                    "blockGap": "2rem"
                 }
             }
         }
